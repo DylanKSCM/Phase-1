@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dylan Krpan — Portfolio</title>
+<meta name="description" content="Dylan Krpan — operations automation, data pipelines, and analytics dashboards for multi-location retail.">
+<style>
+  :root {
+    --bg: #f7f8f6;
+    --surface: #ffffff;
+    --ink: #16201a;
+    --muted: #5a6760;
+    --line: #dfe5e0;
+    --accent: #1f7a4d;
+    --accent-soft: #e4f2ea;
+    --chip: #eef1ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1411; --surface: #161d19; --ink: #e6ece8; --muted: #9aa8a0;
+      --line: #26302a; --accent: #4cc38a; --accent-soft: #173226; --chip: #1e2722;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1411; --surface: #161d19; --ink: #e6ece8; --muted: #9aa8a0;
+    --line: #26302a; --accent: #4cc38a; --accent-soft: #173226; --chip: #1e2722;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 20px;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; }
+  a { color: var(--accent); }
+  header.hero { padding-block: 72px 40px; border-bottom: 1px solid var(--line); }
+  .eyebrow { color: var(--accent); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; margin: 0 0 12px; }
+  h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.1; margin: 0 0 16px; letter-spacing: -.02em; }
+  .lede { font-size: clamp(17px, 2.2vw, 20px); color: var(--muted); max-width: 680px; margin: 0 0 24px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn { display: inline-block; padding: 9px 16px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); text-decoration: none; font-weight: 600; font-size: 14px; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  section { padding-block: 48px; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 24px; margin: 0 0 6px; letter-spacing: -.01em; }
+  .sub { color: var(--muted); margin: 0 0 28px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 36px; }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  .stat b { display: block; font-size: 26px; color: var(--accent); line-height: 1.2; }
+  .stat span { color: var(--muted); font-size: 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px; display: flex; flex-direction: column; }
+  .card h3 { font-size: 18px; margin: 0 0 8px; line-height: 1.3; }
+  .card .problem { color: var(--muted); margin: 0 0 12px; font-size: 15px; }
+  .card ul { margin: 0 0 16px; padding-left: 18px; font-size: 15px; }
+  .card li { margin-bottom: 4px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+  .chip { background: var(--chip); color: var(--ink); border-radius: 999px; padding: 3px 10px; font-size: 12.5px; }
+  .tag { display: inline-block; background: var(--accent-soft); color: var(--accent); border-radius: 6px; padding: 2px 8px; font-size: 12px; font-weight: 600; margin-bottom: 10px; align-self: flex-start; }
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px; }
+  .skill { border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; }
+  .skill h4 { margin: 0 0 4px; font-size: 16px; }
+  .skill p { margin: 0; color: var(--muted); font-size: 14.5px; }
+  footer { padding-block: 32px 48px; color: var(--muted); font-size: 14px; }
+  .note { font-size: 13px; color: var(--muted); margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow">Operations Automation · Data · Analytics</p>
+    <h1>Dylan Krpan</h1>
+    <p class="lede">I build the systems that take retail operations from manual exports and spreadsheets to unattended pipelines, data guardrails, and dashboards leaders actually use, across a multi-location retail network.</p>
+    <div class="links">
+      <a class="btn primary" href="#projects">See the work</a>
+      <a class="btn" href="https://github.com/DylanKSCM">GitHub</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>Hourly</b><span>unattended report capture on weekdays</span></div>
+      <div class="stat"><b>Hundreds</b><span>of retail locations covered per run</span></div>
+      <div class="stat"><b>~290k rows</b><span>largest single workbook processed</span></div>
+      <div class="stat"><b>9</b><span>production tools &amp; dashboards shipped</span></div>
+    </div>
+  </header>
+
+  <section id="projects">
+    <h2>Selected projects</h2>
+    <p class="sub">Built for internal use at a multi-location retailer. Descriptions are generalized; no company data, code, or systems are shared here.</p>
+
+    <div class="grid">
+
+      <article class="card">
+        <span class="tag">Automation</span>
+        <h3>Unattended back-office report pipeline</h3>
+        <p class="problem">A dealer portal had no scheduled exports, so a dozen operational reports (inventory, aged stock, purchasing, sales, rebates, transfers, cash) were pulled by hand.</p>
+        <ul>
+          <li>AI browser agent on a schedule drives the portal's report screens, fills complex custom dropdowns and date pickers, and collects finished files from the queue</li>
+          <li>Files land in dated folders with consistent names; month-to-date reports are prioritized for downstream consumers</li>
+          <li>Hard safety stops: never enters credentials; sends a phone push alert on any block it can't clear</li>
+          <li>Runbooks plus ~100 structured "lessons learned" notes keep the agent reliable over time</li>
+        </ul>
+        <div class="chips"><span class="chip">Python</span><span class="chip">pandas / openpyxl</span><span class="chip">Browser automation</span><span class="chip">JavaScript</span><span class="chip">Scheduled tasks</span><span class="chip">AI agents</span></div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Data quality</span>
+        <h3>Integrity guardrails for automated feeds</h3>
+        <p class="problem">Automated pulls fail quietly: partial coverage, stale copies, or cloud sync making an old file look new.</p>
+        <ul>
+          <li>15-minute gap detector that trusts the timestamp <em>inside</em> each workbook, not the file's modified time</li>
+          <li>Post-run validator that confirms every location is present in the output</li>
+          <li>SHA-256 de-duplication of identical hourly copies (freed ~300 MB in a day)</li>
+          <li>Recovery for stuck downloads, safe cleanup, and a missed-day back-fill tool</li>
+        </ul>
+        <div class="chips"><span class="chip">Python</span><span class="chip">hashlib</span><span class="chip">Exit-code driven recovery</span></div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Analytics</span>
+        <h3>Accessory margin dashboard</h3>
+        <p class="problem">Leadership had no single view of margin, attach rate, inventory turn, and end-of-life exposure.</p>
+        <ul>
+          <li>pandas ETL joins monthly sales and inventory exports to a product catalog and store hierarchy (~99.7% catalog match)</li>
+          <li>Output is one offline HTML file: month selector, hierarchy filters, drill-down tables, opportunity finder, CSV export</li>
+          <li>Per-rep scorecard and adjustable margin thresholds</li>
+        </ul>
+        <div class="chips"><span class="chip">Python / pandas</span><span class="chip">Vanilla JS</span><span class="chip">Single-file HTML</span></div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Alerting</span>
+        <h3>Config-driven inventory alert emailer</h3>
+        <p class="problem">Field leaders needed a short, prioritized view of stockouts and overstock in their area.</p>
+        <ul>
+          <li>Modular CLI: loader → layered rules engine → HTML email renderer → sender</li>
+          <li>Thresholds cascade from default to category, tier, model, and store; unassigned stores roll up a level</li>
+          <li>Emits a manifest a Power Automate flow sends from in one run; dry-run by default, with tests</li>
+        </ul>
+        <div class="chips"><span class="chip">Python</span><span class="chip">JSON config</span><span class="chip">Email-safe HTML</span><span class="chip">Power Automate</span></div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Analytics</span>
+        <h3>Sales rep dashboard &amp; contest engine</h3>
+        <p class="problem">A sales contest needed fair, auditable scoring and daily visibility for reps.</p>
+        <ul>
+          <li>Drill-down from leadership level to store to rep, with participation, attach rate, and month-over-month change</li>
+          <li>Shared config-driven engine with a seeded, reproducible raffle draw and locked results once announced</li>
+          <li>One template builds field and internal versions; the daily refresh refuses to publish bad data</li>
+        </ul>
+        <div class="chips"><span class="chip">Python</span><span class="chip">HTML / JS</span><span class="chip">JSON config</span></div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Compliance</span>
+        <h3>Near-real-time cash compliance feed</h3>
+        <p class="problem">Leaders needed to know within minutes when a store's cash drawer wasn't opened on time.</p>
+        <ul>
+          <li>Cash-audit export every ~10 minutes during opening hours, feeding an alert engine through a drop folder</li>
+          <li>Overwrite-per-day and 14-day retention rules</li>
+          <li>Prototype handed off to another operator with a written runbook</li>
+        </ul>
+        <div class="chips"><span class="chip">Python</span><span class="chip">Scheduled tasks</span><span class="chip">Runbooks</span></div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Compliance</span>
+        <h3>Fleet fuel card audit</h3>
+        <p class="problem">Spot fuel card misuse without combing through statements line by line.</p>
+        <ul>
+          <li>Flags rapid refuels, skipped odometer entries, driver mismatches, dormant cards, non-fuel purchases, and limit overruns</li>
+          <li>Each flag has a severity, plus a key explaining what it means, why it matters, and what to do</li>
+        </ul>
+        <div class="chips"><span class="chip">HTML / JS</span><span class="chip">Rules-based flags</span></div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Tooling</span>
+        <h3>Browser session resilience</h3>
+        <p class="problem">Idle logouts and background-tab throttling kept breaking long unattended runs.</p>
+        <ul>
+          <li>Userscript keep-alive that clicks only verified session-timeout prompts and backs off when content security policy blocks it</li>
+          <li>Launcher that starts Chrome with background throttling disabled</li>
+          <li>Page patches so hidden tabs still render modern micro-frontends</li>
+        </ul>
+        <div class="chips"><span class="chip">JavaScript</span><span class="chip">Tampermonkey</span><span class="chip">Chrome flags</span></div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Design system</span>
+        <h3>Reusable dashboard components</h3>
+        <p class="problem">A growing set of dashboards needed one look and one consistent confidentiality notice.</p>
+        <ul>
+          <li>Token-based light/dark design system with cards, KPI grids, dense tables, and status pills</li>
+          <li>Acceptance gate with versioned acknowledgment; changing the policy version re-prompts everyone</li>
+          <li>Slide-out acronym key and build-time "data as of" dates</li>
+        </ul>
+        <div class="chips"><span class="chip">CSS custom properties</span><span class="chip">Vanilla JS</span><span class="chip">Documentation</span></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>What I bring</h2>
+    <p class="sub">The through-lines across this work.</p>
+    <div class="skills">
+      <div class="skill"><h4>AI agents in production</h4><p>Runbooks, persistent memory, failure alerts, and human-in-the-loop stop points.</p></div>
+      <div class="skill"><h4>Automating hard web UIs</h4><p>React/MUI widgets, trusted vs. synthetic events, throttling, and session keep-alive.</p></div>
+      <div class="skill"><h4>Data integrity by design</h4><p>In-file timestamp checks, coverage validation, safe de-dup and back-fill.</p></div>
+      <div class="skill"><h4>ETL → dashboards</h4><p>Messy exports into clean, offline, single-file dashboards with pandas and vanilla JS.</p></div>
+      <div class="skill"><h4>Rules engines</h4><p>Config-driven, dry-run by default, and tested.</p></div>
+      <div class="skill"><h4>Handoffs that stick</h4><p>Low-code integrations and operational docs so others can own what I build.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2026 Dylan Krpan · <a href="https://github.com/DylanKSCM">github.com/DylanKSCM</a></div>
+    <div class="note">Project descriptions are generalized summaries of internal work; no proprietary code or data is published.</div>
+  </footer>
+
+</div>
+</body>
+</html>
